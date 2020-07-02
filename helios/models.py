@@ -775,7 +775,11 @@ class VoterFile(models.Model):
       # create the voter
       if not existing_voter:
         voter_uuid = str(uuid.uuid4())
-        existing_voter = Voter(uuid= voter_uuid, user = None, voter_login_id = voter['voter_id'],
+
+        User.objects.get_or_create(user_id=voter['voter_id'], user_type='ldap', name=voter['name'], info={'email': voter['email']})
+        django_user = User.objects.get(user_id=voter['voter_id'])
+        
+        existing_voter = Voter(uuid= voter_uuid, user = django_user, voter_login_id = voter['voter_id'],
                       voter_name = voter['name'], voter_email = voter['email'], election = election)
         existing_voter.generate_password()
         new_voters.append(existing_voter)

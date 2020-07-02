@@ -317,21 +317,29 @@ def one_election_view(request, election):
   
   if user:
     voter = Voter.get_by_election_and_user(election, user)
-    
-    if not voter:
-      try:
-        eligible_p = _check_eligibility(election, user)
-      except AuthenticationExpired:
-        return user_reauth(request, user)
-      notregistered = True
   else:
     voter = get_voter(request, user, election)
+  # If from election auth_system search for an voter_id equal to user_id
+  if user and not voter and election.eligibility:
+    for constraint in election.eligibility:
+      if constraint['auth_system'] == user.user_type and user.user_type in settings.AUTH_BIND_USERID_TO_VOTERID:
+        voter = Voter.get_by_election_and_voter_id(election, user.user_id)
+        break
+
+  # auto-register this person if the election is openreg
+  if user and not voter and election.openreg:
+    voter = _register_voter(election, user)
 
   if voter:
     # cast any votes?
     votes = CastVote.get_by_voter(voter)
   else:
     votes = None
+  
+   try:
+    eligible_p = _check_eligibility(election, user)
+   except AuthenticationExpired:
+       return user_reauth(request, user) notregistered = True
 
   # status update message?
   if election.openreg:
@@ -575,12 +583,28 @@ def password_voter_login(request, election):
     # then go!
     if user_can_see_election(request, election):
       return HttpResponseRedirect(settings.SECURE_URL_HOST + reverse(one_election_view, args = [election.uuid]))
+  
+    # do we need to constrain the auth_systems?
+    if election.eligibility:
+      auth_systems = [e['auth_system'] for e in election.eligibility]
+    else:
+      auth_systems = None
 
-    password_login_form = forms.VoterPasswordForm()
+    if auth_systems == None:
+      show_password = True
+      password_login_form = forms.VoterPasswordForm()
+    else:
+      show_password = False
+      password_login_form = None
+
+    login_box = auth_views.login_box_raw(request, return_url=return_url, auth_systems = auth_systems)
+
+
     return render_template(request, 'password_voter_login',
                            {'election': election, 
                             'return_url' : return_url,
-                            'password_login_form': password_login_form,
+                            #'password_login_form': password_login_form,
+                            'show_password': show_password, 'password_login_form': password_login_form, 'login_box': login_box,
                             'bad_voter_login' : bad_voter_login})
   
   login_url = request.GET.get('login_url', None)
