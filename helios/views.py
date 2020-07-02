@@ -335,11 +335,11 @@ def one_election_view(request, election):
     votes = CastVote.get_by_voter(voter)
   else:
     votes = None
-  
-   try:
-    eligible_p = _check_eligibility(election, user)
-   except AuthenticationExpired:
-       return user_reauth(request, user) notregistered = True
+    try:
+        eligible_p = _check_eligibility(election, user)
+    except AuthenticationExpired:
+        return user_reauth(request, user)
+    notregistered = True
 
   # status update message?
   if election.openreg:
