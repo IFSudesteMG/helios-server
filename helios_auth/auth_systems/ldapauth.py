@@ -73,7 +73,7 @@ def ldap_login_view(request):
                     request.session['ldap_user']  = {
                         'username': user.username,
                         'email': user.email,
-                        'name': user.first_name + ' ' + user.last_name,
+                        'name': full_name(user.first_name, user.last_name),
                     }
                     return HttpResponseRedirect(reverse(after))
                 else:
@@ -114,3 +114,16 @@ def check_constraint(constraint, user_info):
 
 def can_create_election(user_id, user_info):
   return True
+
+def full_name(first, last):
+    """
+    Retorna o nome completo, resultante da concatenacao de 'first' e 'last'.
+    Se o 'last' estiver contido no 'first' (como ultimo nome),
+    retornar somente o 'first'.
+    """
+    if len(first) > 0 and len(last) > 0:
+        names = first.split()
+        target = names[len(names)-1]
+        if target.lower() == last.lower():
+            return first
+    return first + ' ' + last
