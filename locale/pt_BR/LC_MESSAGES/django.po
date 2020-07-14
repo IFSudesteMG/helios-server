@@ -1612,7 +1612,7 @@ msgstr "Desbloqueada por mais de um dia."
 #: helios/templates/stats_recent_votes.html:7
 #: heliosinstitution/templates/index.html:66 server_ui/templates/index.html:74
 msgid "Recent Votes"
-msgstr "Votos Recentes"
+msgstr "Eleições Recentes"
 
 #: helios/templates/stats_recent_votes.html:8
 msgid "Last 24 hours"
