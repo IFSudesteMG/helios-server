@@ -2068,7 +2068,7 @@ msgstr "Gerenciar Eleitores"
 #: helios_auth/templates/ldapauth/login.html:11
 #: helios_auth/templates/ldapauth/login.html:12
 msgid "Username"
-msgstr "Nome de usuário"
+msgstr "CPF"
 
 #: helios/templates/voters_search.html:4
 msgid "Search Voters for"
