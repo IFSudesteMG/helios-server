@@ -4,6 +4,9 @@
 {% block content %}
 <div class="row">
  <div class="col-md-6 col-sm-12">
+	{% if error %}
+	<p style="border: 1px solid red; padding: 5px;">{% trans error %}</p>
+	{% endif %}
 	<form class="form" role="form" action="" method="POST" id="login_form">
 	{{ form.non_field_errors }}
 	<input type="hidden" name="csrf_token" value="{{csrf_token}}" />
