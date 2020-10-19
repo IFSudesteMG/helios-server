@@ -20,7 +20,7 @@
     <strong>Sua senha para essa eleição</strong>: {{voter.voter_password}}<br>
 </p>
 {% else %}
-<p>Conecte-se com seu usuário e senha dos sistemas do IFSC.</p>
+<p>Conecte-se com seu CPF e senha dos sistemas SIG do IF Sudeste MG. Os sistemas SIG são: SIGAA, SIPAC e SIGRH. Os dados para acesso aos três sistemas são os mesmos para cada usuário.</p>
 {% endifequal %}
 
 {% if voter.vote_hash %}
@@ -37,7 +37,7 @@
 Para proteger a sua privacidade, essa eleição está configurada para utilizar um pseudônimo de eleitor, assim seu login, nome ou email não serão mostrados para o público em geral. Portanto, ao invés de seu nome, o centro de rastreamento de cédula vai listar apenas o seu pseudônimo.
 <br>
 Seu pseudônimo de eleitor: <strong>{{voter.alias}}</strong>.<br>
-IMPORTANTE: quando você for solicitado a informar seu login para votar, informe seu *ID de eleitor* ao invés de seu pseudônimo.
+IMPORTANTE: quando você for solicitado a informar seu login para votar, informe seu CPF ao invés de seu pseudônimo.
 </p>
 {% endif %}
 <br>
