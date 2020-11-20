@@ -35,12 +35,12 @@ Parece que você não votou nessa eleição. Se você acha que votou, por favor,
 <br>
 --
 <br>
-<font style="" size="1" face="verdana, sans-serif"><b style="">Instituto Federal de Santa Catarina - Reitoria</b>
+<font style="" size="1" face="verdana, sans-serif"><b style="">Instituto Federal do Sudeste de Minas Gerais</b>
 </font>
 <br>
-<font style="" size="1" face="verdana, sans-serif">Rua 14 de Julho, 150, Coqueiros, Florianópolis / SC - CEP: 88075-010</font>
+<font style="" size="1" face="verdana, sans-serif">Rua Luz Interior, 360, Estrela Sul, Juiz de Fora / MG - CEP: 36030-713</font>
 <br>
-<u><a href="http://www.ifsc.edu.br" target="_blank" style=""><font style="" face="verdana, sans-serif">www.ifsc.edu.br</font></a></u>
+<u><a href="https://www.ifsudestemg.edu.br" target="_blank" style=""><font style="" face="verdana, sans-serif">www.ifsudestemg.edu.br</font></a></u>
 
 </body>
 </html>

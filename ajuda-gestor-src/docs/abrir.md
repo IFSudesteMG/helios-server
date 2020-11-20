@@ -4,7 +4,7 @@
 
 ## Congelando cédula e abrindo eleição
 
-1. Acesse o endereço [http://helios.ifsc.edu.br](http://helios.ifsc.edu.br), clique no menu **Conectar** e forneça seu nome de usuário e senha.
+1. Acesse o endereço [https://eleicao.ifsudestemg.edu.br/](https://eleicao.ifsudestemg.edu.br/), clique no menu **Conectar** e forneça seu nome de usuário e senha.
 2. Na lista que aparece no lado direito da tela, clique no link da eleição que deseja iniciar
 3. Na página inicial da eleição, clique no *link* **congelar cédula e abrir eleição**.
     - **[Se ao criar a eleição](criar.md)** você especificou uma data e horário para o campo **Votação começa em**, então a **eleição será aberta automaticamente somente após** a data e horário especificado.

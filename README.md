@@ -1,3 +1,11 @@
+# IFSUDESTEMG
+
+Repositório público para atender os [incisos I e II do Art. 89 do Regulamento Eleitoral do IF Sudeste MG 2020 Consolidado](https://www.ifsudestemg.edu.br/eleicoes/geral-2020).
+
+Neste repositório encontra-se o código personalizado a partir do original disponível em [https://github.com/ifsc/helios-server](https://github.com/ifsc/helios-server).
+
+# IFSC
+
 O objetivo deste projeto era inicialmente atender a [necessidade N.47 do PDTI 2013 do IFSC](http://dtic.ifsc.edu.br/files/pdti2013-revisao02.pdf).
 
 No entanto, logo percebeu-se que outras instituições, especialmente as de ensino, poderiam se beneficiar das melhorias realizadas no projeto original, a fim de atender ao público brasileiro.

@@ -1373,7 +1373,7 @@ msgstr ""
 "desencriptação automaticamente.<br />\n"
 "  Se você cadastrar apuradores adicionais, você pode remover o Helios como "
 "apurador, clicando no botão de excluir da opção \"Sistema de Votação Online "
-"do IFSC\" na listagem de apuradores abaixo.<br />\n"
+"do IF Sudeste MG\" na listagem de apuradores abaixo.<br />\n"
 
 #: helios/templates/list_trustees.html:32
 msgid "add a trustee"
@@ -1967,7 +1967,7 @@ msgstr ""
 
 #: helios/templates/voters_list.html:41
 msgid "only voters from the same system"
-msgstr "Apenas eleitores com usuário nos sistemas do IFSC"
+msgstr "Apenas eleitores com usuário nos sistemas do IF Sudeste MG"
 
 #: helios/templates/voters_list.html:47
 msgid "limitedreg"
@@ -3257,12 +3257,12 @@ msgid "Brazilian Portuguese"
 msgstr "Português Brasileiro"
 
 #: settings.py:234
-msgid "IFSC E-Voting System"
-msgstr "Sistema de Votação Online do IFSC"
+msgid "IF Sudeste MG E-Voting System"
+msgstr "Sistema de Votação Online do IF Sudeste MG"
 
 #: settings.py:242
-msgid "Welcome to IFSC E-Voting System"
-msgstr "Bem Vindo ao Sistema de Votação Online do IFSC"
+msgid "Welcome to IF Sudeste MG E-Voting System"
+msgstr "Bem Vindo ao Sistema de Votação Online do IF Sudeste MG"
 
 #: templates/403.html:3
 msgid "Could not complete your request"
