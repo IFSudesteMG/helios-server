@@ -4,7 +4,7 @@
 
 ## Informações gerais
 
-1. Acesse o endereço [http://helios.ifsc.edu.br](http://helios.ifsc.edu.br), clique no menu **Conectar** e forneça seu nome de usuário e senha.
+1. Acesse o endereço [https://eleicao.ifsudestemg.edu.br/](https://eleicao.ifsudestemg.edu.br/), clique no menu **Conectar** e forneça seu nome de usuário e senha.
 
 2. Clique no botão **Criar eleição** e preencha o formulário conforme orientação abaixo:
 
