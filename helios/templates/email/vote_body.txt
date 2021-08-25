@@ -20,7 +20,7 @@
     <strong>Sua senha para essa eleição</strong>: {{voter.voter_password}}<br>
 </p>
 {% else %}
-<p>Conecte-se com seu usuário e senha dos sistemas do IFSC.</p>
+<p>Conecte-se com seu usuário e senha dos sistemas do IF Sudeste MG.</p>
 {% endifequal %}
 
 {% if voter.vote_hash %}
