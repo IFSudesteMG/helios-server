@@ -1,6 +1,6 @@
 # IFSUDESTEMG
 
-Repositório público para atender os [incisos I e II do Art. 89 do Regulamento Eleitoral do IF Sudeste MG 2020 Consolidado](https://www.ifsudestemg.edu.br/eleicoes/geral-2020).
+Repositório público contendo a release [v1.0.1 - IFSudesteMG](https://github.com/IFSudesteMG/helios-server/releases/tag/ifsudestemg-v1.0.1) para atender os [incisos I e II do Art. 89 do Regulamento Eleitoral do IF Sudeste MG 2020 Consolidado](https://www.ifsudestemg.edu.br/eleicoes/eleicao-geral-2024).
 
 Neste repositório encontra-se o código personalizado a partir do original disponível em [https://github.com/ifsc/helios-server](https://github.com/ifsc/helios-server).
 
